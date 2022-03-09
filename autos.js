@@ -13,8 +13,12 @@ YEAR: ${this.year}`;
 }
 
 class Cars {
-	constructor() {
-		this.cars = [];
+	constructor(cars = null) {
+		if (cars !== null) {
+			this.cars = cars;
+		} else {
+			this.cars = [];
+		}
 	}
 
 	addCar(car) {
@@ -32,8 +36,8 @@ const car3 = new Car('BMW', 'grey', 2018);
 // console.log(car1.display());
 // console.log(car2.display());
 
-const cars = new Cars();
-cars.addCar(car1);
-cars.addCar(car2);
+const cars = new Cars([car1, car2]);
+// cars.addCar(car1);
+// cars.addCar(car2);
 cars.addCar(car3);
 console.log(cars.listCars());

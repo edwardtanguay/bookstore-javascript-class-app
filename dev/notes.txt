@@ -9,7 +9,7 @@
 - x create Cars class
 - x create car object
 - x create addCar(car)
-- .. create listCars()
+- x create listCars()
 
-- create in constructor: as parameter array of cars
+- .. create in constructor: as parameter array of cars
 - each class in its own file
