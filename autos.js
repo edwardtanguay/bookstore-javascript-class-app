@@ -20,14 +20,20 @@ class Cars {
 	addCar(car) {
 		this.cars.push(car);
 	}
+
+	listCars() {
+		return this.cars.map(car => car.display()).join('\n\n');
+	}
 }
 
 const car1 = new Car('Mercedes', 'yellow', 2019);
 const car2 = new Car('BMW', 'blue', 2017);
-console.log(car1.display());
-console.log(car2.display());
+const car3 = new Car('BMW', 'grey', 2018);
+// console.log(car1.display());
+// console.log(car2.display());
 
 const cars = new Cars();
 cars.addCar(car1);
 cars.addCar(car2);
-console.log(cars);
+cars.addCar(car3);
+console.log(cars.listCars());

@@ -8,8 +8,8 @@
 - x call display() method on object
 - x create Cars class
 - x create car object
-- .. create addCar(car)
-- create listCars()
+- x create addCar(car)
+- .. create listCars()
 
 - create in constructor: as parameter array of cars
 - each class in its own file
