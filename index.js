@@ -1,8 +1,14 @@
-class Book {
-	constructor(title, author, numberOfPages) {
+class Publication {
+	constructor(title, numberOfPages) {
 		this.title = title;
-		this.author = author;
 		this.numberOfPages = numberOfPages;
+	}
+}
+
+class Book extends Publication {
+	constructor(title, author, numberOfPages) {
+		super(title, numberOfPages);
+		this.author = author;
 	}
 
 	displayAsLine() {
@@ -39,6 +45,12 @@ class Books {
 	}
 }
 
+class Magazine extends Publication {
+	constructor(title, issueNumber, numberOfPages) {
+		super(title, numberOfPages);
+		this.issueNumber = issueNumber; 
+	}
+}
 // code smell
 const book = Book.instantiateBook('Sapiens', 'Yuval Harari', 543);
 const book2 = new Book('JavaScript Functional Programmign', 'Federico Kereki', 433);
