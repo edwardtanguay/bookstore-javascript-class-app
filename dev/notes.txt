@@ -5,4 +5,11 @@
 - x create Car class: with make, color, year 
 - x create display() method
 - x create object
-- .. call display() method on object
+- x call display() method on object
+- .. create Cars class
+- create car object
+- create addCar(car)
+- create listCars()
+
+- create in constructor: as parameter array of cars
+- each class in its own file

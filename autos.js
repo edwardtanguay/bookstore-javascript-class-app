@@ -12,5 +12,11 @@ YEAR: ${this.year}`;
 	}
 }
 
+class Cars {
+	constructor() {
+		this.cars = [];
+	}
+}
+
 const car = new Car('Mercedes', 'yellow', 2019);
 console.log(car.display());
