@@ -16,9 +16,18 @@ class Cars {
 	constructor() {
 		this.cars = [];
 	}
+
+	addCar(car) {
+		this.cars.push(car);
+	}
 }
 
 const car1 = new Car('Mercedes', 'yellow', 2019);
 const car2 = new Car('BMW', 'blue', 2017);
 console.log(car1.display());
 console.log(car2.display());
+
+const cars = new Cars();
+cars.addCar(car1);
+cars.addCar(car2);
+console.log(cars);

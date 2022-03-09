@@ -7,8 +7,8 @@
 - x create object
 - x call display() method on object
 - x create Cars class
-- .. create car object
-- create addCar(car)
+- x create car object
+- .. create addCar(car)
 - create listCars()
 
 - create in constructor: as parameter array of cars
