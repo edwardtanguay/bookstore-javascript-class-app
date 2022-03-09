@@ -1,2 +1,8 @@
 - x create Book class
-- .. create Books class
+- x create Books class
+
+- AUTOS
+- .. create Car class: with make, color, year 
+- create display() method
+- create object
+- call display() method on object
