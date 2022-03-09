@@ -22,6 +22,16 @@ export class Cars {
 </table>`;
 	}
 
+	exportAsJson() {
+		return `[
+	{
+		"make": "testMercedes",
+		"color": "red",
+		"year": 2015,
+	}
+]`;
+	}
+
 	static instantiateCarsWithJavaScriptObjectArray(javaScriptObjectArray) {
 		const cars = new Cars();
 		// CHALLENGE: complete :-)

@@ -15,12 +15,14 @@
 - x enable Cars to be instantiated with arrays of objects
 
 - x method: exportAsHtml()
-	- ,, show HTML in browser 
-		- ,, clean up
+	- x show HTML in browser 
+		- x clean up
 		 	- x each class in its own file
-			- delete all unused code 
-			- create HTML file
-- method: exportAsJson()
+			- x delete all unused code 
+			- x create HTML file
+- .. method: exportAsJson()
+
+
 - method: exportAsXml()
 
 - each class in its own file
