@@ -3,6 +3,10 @@ class Publication {
 		this.title = title;
 		this.numberOfPages = numberOfPages;
 	}
+
+	displayAsLine() {
+		return `TITLE: ${this.title}, NUMBER OF PAGES: ${this.numberOfPages}`;
+	}
 }
 
 class Book extends Publication {
@@ -50,6 +54,10 @@ class Magazine extends Publication {
 		super(title, numberOfPages);
 		this.issueNumber = issueNumber; 
 	}
+
+	displayAsLine() {
+		return `TITLE: ${this.title}, ISSUE NUMBER: ${this.issueNumber}, NUMBER OF PAGES: ${this.numberOfPages}`;
+	}
 }
 // code smell
 const book = Book.instantiateBook('Sapiens', 'Yuval Harari', 543);
@@ -61,4 +69,9 @@ const book2 = new Book('JavaScript Functional Programmign', 'Federico Kereki', 4
 const books = new Books();
 books.addBook(book);
 books.addBook(book2);
-console.log(books.listBooks());
+// console.log(books.listBooks());
+
+
+const magazine = new Magazine('Spiegel', 34, 543);
+console.log(book.displayAsLine());
+console.log(magazine.displayAsLine());
