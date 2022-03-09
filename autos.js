@@ -22,7 +22,7 @@ class Cars {
 	}
 
 	listCars() {
-		return this.cars.map(car => car.display()).join('\n\n');
+		return this.cars.map(car => car.display()).join('\r\n\r\n');
 	}
 }
 
