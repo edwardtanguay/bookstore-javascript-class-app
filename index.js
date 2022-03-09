@@ -14,10 +14,19 @@ class Book {
 AUTHOR: ${this.author}
 NUMBER OF PAGES: ${this.numberOfPages}`;
 	}
+
+	// factory pattern
+	static instantiateBook(title, author, numberOfPages) {
+		return new Book(title, author, numberOfPages);
+	}
 }
 
-const book = new Book('Sapiens', 'Yuval Harari', 543);
+// code smell
+const book = Book.instantiateBook('Sapiens', 'Yuval Harari', 543);
+const book2 = new Book('JavaScript Functional Programmign', 'Federico Kereki', 433);
 
 // console.log(book.displayAsLine());
+// console.log(book2.displayAsBlock());
+
 console.log(book.displayAsBlock());
 
