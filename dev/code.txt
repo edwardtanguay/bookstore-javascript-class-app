@@ -1,0 +1,17 @@
+const carsFromApi = [
+	{
+		make: 'Audi',
+		color: 'green',
+		year: 2008
+	},
+	{
+		make: 'Audi',
+		color: 'red',
+		year: 2008
+	},
+	{
+		make: 'Audi',
+		color: 'blue',
+		year: 2008
+	}
+];

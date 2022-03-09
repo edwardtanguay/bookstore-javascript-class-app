@@ -14,7 +14,12 @@
 - x create in constructor: as parameter array of cars
 - x enable Cars to be instantiated with arrays of objects
 
-- .. method: exportAsHtml()
+- x method: exportAsHtml()
+	- ,, show HTML in browser 
+		- ,, clean up
+		 	- x each class in its own file
+			- delete all unused code 
+			- create HTML file
 - method: exportAsJson()
 - method: exportAsXml()
 
