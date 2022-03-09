@@ -1,7 +1,7 @@
 class Car {
-	constructor(make, color = '(unknown)', year = 2022) {
 	// constructor(make, color = '(unknown)', year = 2022) {
-		this.make = make;
+	constructor({make, color, year}) {
+		this.make = make ?? '(make unknown)';
 		this.color = color;
 		this.year = year;
 	}
@@ -38,12 +38,12 @@ class Cars {
 	}
 }
 
-const car1 = new Car('Mercedes', 'yellow', 2019);
-const car2 = new Car('BMW', 'blue', 2017);
-const car3 = new Car('BMW','', 2018);
-const car4 = new Car('BMW', 'grey');
+const car1 = new Car({ color: 'yellow', year: 2019 });
+// const car2 = new Car('BMW', 'blue', 2017);
+// const car3 = new Car('BMW','', 2018);
+// const car4 = new Car('BMW', 'grey');
 // const cars = new Cars([car1, car2]);
-const cars = Cars.instantiateCarsWithCarsObjectArray([car1, car2, car3, car4]);
+const cars = Cars.instantiateCarsWithCarsObjectArray([car1]);
 console.log(cars.listCars());
 // console.log(car1.display());
 // console.log(car2.display());
