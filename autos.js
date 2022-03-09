@@ -18,5 +18,7 @@ class Cars {
 	}
 }
 
-const car = new Car('Mercedes', 'yellow', 2019);
-console.log(car.display());
+const car1 = new Car('Mercedes', 'yellow', 2019);
+const car2 = new Car('BMW', 'blue', 2017);
+console.log(car1.display());
+console.log(car2.display());
