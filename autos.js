@@ -11,3 +11,6 @@ COLOR: ${this.color}
 YEAR: ${this.year}`;
 	}
 }
+
+const car = new Car('Mercedes', 'yellow', 2019);
+console.log(car.display());

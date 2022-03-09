@@ -3,6 +3,6 @@
 
 - AUTOS
 - x create Car class: with make, color, year 
-- .. create display() method
-- create object
-- call display() method on object
+- x create display() method
+- x create object
+- .. call display() method on object
