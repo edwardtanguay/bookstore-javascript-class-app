@@ -19,4 +19,12 @@ YEAR: ${this.year}`;
 		<td>${this.year}</td>
 	</tr>`;
 	}
+
+	exportAsJson() {
+		return `	{
+		"make": "${this.make}",
+		"color": "${this.color}",
+		"year": ${this.year}
+	}`;
+	}
 }

@@ -24,11 +24,7 @@ export class Cars {
 
 	exportAsJson() {
 		return `[
-	{
-		"make": "testMercedes",
-		"color": "red",
-		"year": 2015,
-	}
+${this.cars.map(car => car.exportAsJson()).join(',\r\n')}
 ]`;
 	}
 
