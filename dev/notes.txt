@@ -12,7 +12,7 @@
 - x create listCars()
 
 - x create in constructor: as parameter array of cars
-- .. enable Cars to be instantiated with arrays of objects
+- x enable Cars to be instantiated with arrays of objects
 
 
 - each class in its own file
