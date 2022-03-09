@@ -11,9 +11,9 @@ export class Cars {
 		return this.cars.map(car => car.display()).join('\r\n\r\n');
 	}
 
-	exportAsHtml() {
+	exportAsHtml(className) {
 		return `
-<table>
+<table class=${className}>
 	<tr>
 		<th>Make</th>
 		<th>Color</th>
