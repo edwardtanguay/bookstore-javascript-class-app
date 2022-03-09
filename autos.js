@@ -11,6 +11,15 @@ class Car {
 COLOR: ${this.color}
 YEAR: ${this.year}`;
 	}
+
+	exportAsHtml() {
+		return `
+	<tr>
+		<td>${this.make}</td>
+		<td>${this.color}</td>
+		<td>${this.year}</td>
+	</tr>`;
+	}
 }
 
 class Cars {
@@ -26,6 +35,17 @@ class Cars {
 		return this.cars.map(car => car.display()).join('\r\n\r\n');
 	}
 
+	exportAsHtml() {
+		return `
+<table>
+	<tr>
+		<th>Make</th>
+		<th>Color</th>
+		<th>Year</th>
+	</tr>${this.cars.map(car => car.exportAsHtml()).join('')}
+</table>`;
+	}
+
 	static instantiateCarsWithJavaScriptObjectArray(javaScriptObjectArray) {
 		const cars = new Cars();
 		// CHALLENGE: complete :-)
@@ -38,14 +58,15 @@ class Cars {
 	}
 }
 
-const car1 = new Car({ color: 'yellow', year: 2019 });
+const car1 = new Car({ color: 'yellow', year: 2019, make: 'Mercedes' });
 const car2 = new Car({ make: 'BMW', color: 'blue', year: 2017 });
 const car3 = new Car({ make: 'BMW', color: 'red', year: 2018 });
 // const cars = new Cars([car1, car2]);
 const cars = Cars.instantiateCarsWithCarsObjectArray([car1, car2, car3]);
-console.log(cars.listCars());
+// console.log(cars.listCars());
 // console.log(car1.display());
 // console.log(car2.display());
+console.log(cars.exportAsHtml());
 
 const carsFromApi = [
 	{
